@@ -101,7 +101,7 @@ class CssInlinerPlugin
                 }
             }
 
-            $message->setBody(new AlternativePart(
+            $message->setBody(new MixedPart(
                 ...array_map(
                     fn (AbstractPart $part) => $this->processPart($part),
                     $allParts
